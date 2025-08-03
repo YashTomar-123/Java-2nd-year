@@ -1,0 +1,16 @@
+package Fundamentals;
+import java.util.Scanner;
+public class ReverseOfANumber {
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		int n = Sc.nextInt();		
+		int reverse = 0;
+		while(n>0) {
+			int id = n%10;
+			reverse = reverse*10+id;
+			n=n/10;
+		}
+		System.out.println(reverse);
+	}
+
+}
