@@ -1,0 +1,12 @@
+package Fundamentals;
+import java.util.Scanner;
+public class Cube {
+	public static long cube(long n) {
+		return n*n*n;
+	}
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		int a = Sc.nextInt();
+		System.out.println(cube(a));
+	}
+}
