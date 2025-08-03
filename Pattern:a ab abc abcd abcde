@@ -4,7 +4,7 @@ public class Patternabc {
 	public static void main(String[] args) {	
 		Scanner Sc = new Scanner(System.in);
 		int rows = Sc.nextInt();
-		char i = 1;
+		char i = 97;
 		while(i<=(96+rows)) {
 			char a = 97;
 			while(a <= i) {
