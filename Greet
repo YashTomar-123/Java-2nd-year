@@ -1,0 +1,10 @@
+package Fundamentals;
+import java.util.Scanner;
+public class Welcome {
+	public static String message(String name) {
+		return("Welcome " + name);
+	}
+	public static void main(String[] args) {
+		System.out.println(message("Yash Tomar"));
+	}	
+}
