@@ -1,0 +1,15 @@
+package Fundamentals;
+import java.util.*;
+public class ptn {
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter your number of rows:");
+		int rows = Sc.nextInt();
+		for(char i = 65;i<(65+rows);i++) {
+			for(char j = 65;j<=i;j++) {
+				System.out.print(i);
+			}
+			System.out.println();
+		}
+	}
+}
