@@ -1,0 +1,22 @@
+package Fundamentals;
+import java.util.*;
+public class Patt {
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter your number of rows:");
+		int rows = Sc.nextInt();
+		int number = 1;
+		int i = 1;
+		while(i<=rows) {
+			int j = 1;
+			while(j<=i) {
+				System.out.print(number + " ");
+				number++;
+				j++;
+			}
+			//preparation for next line
+			System.out.println();
+			i++;
+		}
+	}
+}
