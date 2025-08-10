@@ -1,0 +1,19 @@
+package Fundamentals;
+import java.util.Scanner;
+public class Table {
+	public static int table(int n, int i) {
+		int j;
+		for(j = 1;j<=i;j++) {
+		System.out.println(n + " x " + j + " = " + (n*j));
+		}
+		return 0;
+	}
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter your number for table");
+		int a = Sc.nextInt();
+		System.out.println("Enter the end of table iteration");
+		int b = Sc.nextInt();
+		System.out.println(table(a,b));
+	}
+}
