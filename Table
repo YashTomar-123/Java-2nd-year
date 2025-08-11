@@ -1,6 +1,6 @@
-import java.util.*;
-public class Main
-{
+package Fundamentals;
+import java.util.Scanner;
+public class Table {
 	public static void table(int n, int i) {
 		int j;
 		for(j = 1;j<=i;j++) {
@@ -13,6 +13,6 @@ public class Main
 		int a = Sc.nextInt();
 		System.out.println("Enter the end of table iteration");
 		int b = Sc.nextInt();
-		System.out.println(table(a,b));
+		table(a,b);
 	}
 }
