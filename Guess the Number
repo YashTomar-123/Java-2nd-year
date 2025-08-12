@@ -1,0 +1,27 @@
+package Fundamentals;
+import java.util.Scanner;
+public class GuessTheNumber {
+	public static void guess(byte r) {
+		byte no =(byte) Math.random();
+		if(r>no) {
+			System.out.println("actual number is smaller than your number");
+			fun();
+		}
+		else if(r<no) {
+			System.out.println("actual number is greater than your number");
+			fun();
+		}
+		else {
+			System.out.println("You Win!");
+		}
+	}
+	public static void fun() {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter your number");
+		byte n = Sc.nextByte();
+		guess(n);
+	}
+	public static void main(String[] args) {
+		fun();
+	}
+}
