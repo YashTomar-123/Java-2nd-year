@@ -1,0 +1,32 @@
+package Fundamentals;
+import java.util.Scanner;
+public class LCMandHCF {
+	public static void LCM(int a,int b) {
+		int max = a;
+		while(true) {
+			if(max%a==0&&max%b==0) {
+				break;
+			}
+			max++;
+		}
+		System.out.println("LCM of n1 and n2 is "+max);
+	}
+	public static void HCF(int a,int b) {
+		int hcf = 1;
+		for(int i =1;i<=a&&i<=b;i++) {
+			if(a%i==0&&b%i==0) {
+				hcf=i;
+			}
+		}
+		System.out.println("HCF of n1 and n2 is "+hcf);
+	}
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter your number 1:");
+		int n1 = Sc.nextInt();
+		System.out.println("Enter your number 2:");
+		int n2 = Sc.nextInt();
+		LCM(n1,n2);
+		HCF(n1,n2);
+	}
+}
