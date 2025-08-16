@@ -1,0 +1,34 @@
+package Fundamentals;
+import java.util.Scanner;
+public class Diagonal {
+	public static void PrimaryDiagonal(int arr[][]) {
+		int n = arr.length;
+		System.out.println("Primary diagonal is: ");
+		for(int i = 0;i<n;i++) {
+			System.out.print(arr[i][i]+" ");
+		}
+	}
+	public static void SecondaryDiagonal(int arr[][]) {
+		int n = arr.length;
+		System.out.println("\nSecondary diagonal is: ");
+		for(int i = 0;i<n;i++) {
+			System.out.print(arr[i][n-i-1]+" ");
+		}
+	}
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter your rows:");
+		int row = Sc.nextInt();
+		System.out.println("Enter your columns");
+		int column = Sc.nextInt();
+		int[][] arr = new int[row][column];
+		for(int i = 0;i<row;i++) {
+			for(int j = 0;j<column;j++) {
+				System.out.println("Element at index ["+i+"]["+j+"] is:");
+				arr[i][j] = Sc.nextInt();
+			}
+		}
+		PrimaryDiagonal(arr);
+		SecondaryDiagonal(arr);
+	}
+}
