@@ -1,0 +1,38 @@
+package Fundamentals;
+import java.util.Scanner;
+public class SumOfDiagonals {
+	public static void Sum1(int arr[][]) {
+		int n = arr.length;
+		int sum = 0;
+		for(int i = 0;i<n;i++) {
+			sum = sum + arr[i][i];
+		}
+		System.out.println("Sum of Primary Diagonal is: ");
+		System.out.println(sum);
+	}
+	public static void Sum2(int arr[][]) {
+		int n = arr.length;
+		int sum = 0;
+		for(int i = 0;i<n;i++) {
+			sum = sum + arr[i][n-i-1];
+		}
+		System.out.println("Sum of Secondary Diagonal is: ");
+		System.out.println(sum);
+	}
+	public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter your rows:");
+		int row = Sc.nextInt();
+		System.out.println("Enter your columns");
+		int column = Sc.nextInt();
+		int[][] arr = new int[row][column];
+		for(int i = 0;i<row;i++) {
+			for(int j = 0;j<column;j++) {
+				System.out.println("Element at index ["+i+"]["+j+"] is: ");
+				arr[i][j] = Sc.nextInt();
+			}
+		}
+		Sum1(arr);
+		Sum2(arr);
+	}
+}
