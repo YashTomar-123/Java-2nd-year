@@ -1,0 +1,25 @@
+package Fundamentals;
+import java.util.*;
+public class replaceanumber {
+	public static void main(String[] args) {
+		Scanner Sc= new Scanner(System.in);
+		System.out.println("Enter your number: ");
+		int n = Sc.nextInt();
+		System.out.println("Enter your digit in n to be replaced: ");
+		int a = Sc.nextInt();
+		System.out.println("Enter your replacing number: ");
+		int b = Sc.nextInt();
+		int pos = 1;
+		int replace = 0;
+		while(n>0) {
+			int i = n%10;
+			if(i==a) {
+				i = b;
+			}
+			replace=replace+i*pos;
+			pos=pos*10;
+			n=n/10;
+			}
+			System.out.println(replace);
+	}
+}
